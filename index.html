@@ -1,0 +1,146 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#5145cd">
+  <title>DigoFriend — Your Friends, Your Community</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      color: #20233a;
+      background: #f5f6fb;
+    }
+    header {
+      background: #fff;
+      padding: 18px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 1px solid #e8e9f2;
+    }
+    .logo {
+      color: #5145cd;
+      font-size: 25px;
+      font-weight: 800;
+    }
+    .tagline { color: #777a90; font-size: 13px; }
+    main {
+      max-width: 1000px;
+      margin: 40px auto;
+      padding: 0 18px;
+    }
+    .hero {
+      background: linear-gradient(135deg, #5145cd, #8175f2);
+      color: white;
+      padding: 48px 28px;
+      border-radius: 22px;
+      text-align: center;
+    }
+    .hero h1 { font-size: 38px; margin: 0 0 14px; }
+    .hero p {
+      line-height: 1.7;
+      max-width: 520px;
+      margin: 0 auto 24px;
+    }
+    .button {
+      display: inline-block;
+      padding: 12px 22px;
+      border-radius: 10px;
+      background: white;
+      color: #5145cd;
+      font-weight: bold;
+      text-decoration: none;
+    }
+    .section-title { margin: 32px 0 16px; }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 16px;
+    }
+    .card {
+      background: white;
+      padding: 22px;
+      border-radius: 16px;
+      border: 1px solid #e9eaf3;
+    }
+    .card .symbol { font-size: 28px; }
+    .card h3 { margin-bottom: 8px; }
+    .card p { color: #73768a; line-height: 1.6; font-size: 14px; }
+    .notice {
+      margin-top: 25px;
+      padding: 18px;
+      background: #eeedff;
+      border-radius: 12px;
+      color: #5145cd;
+      line-height: 1.6;
+    }
+    footer {
+      text-align: center;
+      padding: 28px 16px;
+      color: #777a90;
+      font-size: 13px;
+    }
+    @media (max-width: 650px) {
+      .cards { grid-template-columns: 1fr; }
+      .hero h1 { font-size: 30px; }
+      .hero { padding: 38px 20px; }
+      header { padding: 16px 5%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="logo">DigoFriend</div>
+    <div class="tagline">Connect. Share. Belong.</div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Your friends. Your community.</h1>
+      <p>
+        A new place to reconnect with friends, share your interests
+        and discover communities that bring people together.
+      </p>
+      <a class="button" href="#features">Explore DigoFriend</a>
+    </section>
+
+    <h2 class="section-title" id="features">
+      A place for your people
+    </h2>
+
+    <section class="cards">
+      <article class="card">
+        <div class="symbol">👥</div>
+        <h3>Your Profile</h3>
+        <p>Create your own space and introduce yourself to the community.</p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">💬</div>
+        <h3>Friend Connections</h3>
+        <p>Reconnect with friends and build meaningful relationships.</p>
+      </article>
+
+      <article class="card">
+        <div class="symbol">🌐</div>
+        <h3>Communities</h3>
+        <p>Find people who share your hobbies, interests and ideas.</p>
+      </article>
+    </section>
+
+    <div class="notice">
+      <strong>We are building something new.</strong><br>
+      DigoFriend is an independent social-network project.
+      Member registration and community features are not available yet.
+    </div>
+  </main>
+
+  <footer>
+    © 2026 DigoFriend · Built for friendship and community
+  </footer>
+</body>
+</html>
